@@ -10,14 +10,14 @@ public class MyDoublyLinkedList<T> implements MyList<T>, MyQueue<T> {
         Node<T> node = new Node(obj);
         if (first == null) {
             first = node;
-            last = node;
+           // last = node;
             //first.next = null;
             //  last.next = null;
         } else {
             node.prev = last;
             last.next = node;
-            last = node;
-        }
+
+        }last = node;
         size++;
     }
 
